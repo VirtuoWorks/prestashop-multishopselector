@@ -3,15 +3,15 @@
 # PrestaShop Multishop Selector
 
 ## About
-With this PrestaShop module, visitors can choose, in a start page, which store they want to visit.
+With this PrestaShop module, visitors can choose, from the home page, which store they want to visit.
 
 ## Contributing
 PrestaShop modules are open-source extensions to the PrestaShop e-commerce solution. Everyone is welcome and even encouraged to contribute with their own improvements.
 
 ## Installation
-- You must enable Multiple Shops : Enable multistore in Preference > General (see [Documentation](http://doc.prestashop.com/display/PS16/Managing+Multiple+Shops) for more information).
-- You must have, at least, three store.
-- The Default shop is used for the start page.
+- You must enable Multiple Shops : Enable multistore in Preferences > General (see [Documentation](http://doc.prestashop.com/display/PS16/Managing+Multiple+Shops) for more information).
+- You must have, at least, three stores.
+- The Default shop is used only as the home page.
 - Create a folder named multishopselector in modules. Copy all files in this folder.
-- After activate this module, attach this module todisplayHome and displayNav in Apparence > Positions only for the default shop.
-- You must removing modules from displayHeader and displayHome to hide useless element in the home page.
+- After activating this module, attach this module to displayHome and displayNav in Appearance > Positions only for the default shop.
+- You must remove modules from displayHeader and displayHome to hide useless elements on the home page.
