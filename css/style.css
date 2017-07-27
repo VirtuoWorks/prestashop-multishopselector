@@ -1,0 +1,246 @@
+/**********************************************/
+/*********************Page*********************/
+/**********************************************/
+
+body{
+   background-color: #fff !important;
+}
+
+#wrapper{
+  background: none;
+  box-shadow: none;
+}
+
+.homeShopSelector{
+  background: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+#block_top_menu{
+  display: none;
+}
+.pictos_top{
+  display:none;
+}
+.homeShopSelector .header-container{
+  height: 0;
+}
+
+.blockCenterHome{
+ margin-top: 35%;
+ margin-bottom: 2%;
+}
+.homeShopSelector .columns-container{
+  min-height: 0;
+}
+#footer, .homeShopSelector .footer-container{
+  display:none;
+}
+
+@media screen and (max-height: 460px){
+  .blockCenterHome{
+   margin-top: 6%;
+  }
+}
+@media screen and (max-height: 800px) and (min-width: 992px){
+  .blockCenterHome{
+   margin-top: 10%;
+  }
+}
+
+/*********************************************/
+/***************Haut de la page***************/
+/*********************************************/
+.homeShopSelector .header-container, .homeShopSelector #header, .homeShopSelector .slogan_langues{
+  background: transparent;
+}
+.homeShopSelector #header .menu__button{
+  position: fixed;
+  right: 0.8%;
+  top: 2%;
+  margin-left: 0;
+  font-weight: bold;
+}
+
+/**********************************************/
+/*********************Logo*********************/
+/**********************************************/
+@media screen and (max-height: 460px){
+  .homeShopSelector .logoHome img{
+   max-width: 75%;
+  }
+}
+
+/**********************************************/
+/***********Bloc - choix du magasin************/
+/**********************************************/
+#multishopselector_block_home .menu__button{
+  color: #4E82BB;
+  background-color:#FFF;
+  text-transform:uppercase;
+  border-radius:0px;
+  width: 100%;
+}
+#multishopselector_block_home{
+  background-color: #4E82BB;
+  padding-top : 3%;
+  padding-bottom: 3%;
+  margin-top: 5px;
+}
+#multishopselector_block_home form .hideNoScript{
+  display:none;
+}
+#multishopselector_block_home h2{
+  color: #fff;
+  margin: 0;
+  font-size: 1.5em;
+  position: relative;
+}
+#multishopselector_block_home h2 span{
+  font-size: 0.8em;
+  position: absolute;
+  left: 0; bottom: -18px;
+}
+
+.homeRadio + h2, .homeRadio + div h2{
+  line-height: 1.2em;
+}
+
+@media screen and (min-width: 768px){
+  #multishopselector_block_home h2{
+    font-size: 2em;
+  }
+  #multishopselector_block_home h2 span{
+    font-size: 0.65em;
+    bottom: -26px;
+  }
+  #multishopselector_block_home form select{
+    font-size: 120%;
+  }
+  #multishopselector_block_home #priceCarrier span{
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 992px){
+  #multishopselector_block_home h2{
+    font-size: 2.5em;
+  }
+  #multishopselector_block_home h2 span{
+    font-size: 0.6em;
+    bottom: -26px;
+  }
+  #multishopselector_block_home form select{
+    font-size: 130%;
+  }
+  #multishopselector_block_home #priceCarrier span{
+    font-size: 1.2em;
+  }
+}
+
+
+/***************Select***************/
+#multishopselector_block_home form select{
+  cursor: pointer;
+  padding: 5px 2em 5px 10px;
+  font-weight: bold;
+}
+.custom-dropdown--large {
+    font-size: 1.5em;
+}
+.custom-dropdown--small {
+    font-size: .7em;
+}
+.custom-dropdown__select{
+    font-size: inherit; /* inherit size from .custom-dropdown*/
+    padding: .5em; /* add some space*/
+    margin: 0; /* remove default margins */
+}
+.custom-dropdown__select--white {
+    background-color: #fff;
+    color: #444;
+}
+
+
+
+@supports (pointer-events: none) and
+      ((-webkit-appearance: none) or
+      (-moz-appearance: none) or
+      (appearance: none)) {
+
+    .custom-dropdown {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .custom-dropdown__select {
+        padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .custom-dropdown::before,
+    .custom-dropdown::after {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .custom-dropdown::after { /*  Custom dropdown arrow */
+        content: "\25BC";
+        height: 1em;
+        font-size: 1.5em;
+        line-height: 1;
+        right: 0.2em;
+        top: 50%; margin-top: -.5em;
+    }
+
+    .custom-dropdown::before { /*  Custom dropdown arrow cover */
+        width: 2em;
+        right: 0; top: 0; bottom: 0;
+        border-radius: 0 3px 3px 0;
+    }
+
+    .custom-dropdown__select[disabled] {
+        color: rgba(0,0,0,.3);
+    }
+
+    .custom-dropdown.custom-dropdown--disabled::after {
+        color: rgba(0,0,0,.1);
+    }
+
+    /* White dropdown style */
+    .custom-dropdown--white::before {
+        top: .5em; bottom: .5em;
+        background-color: #fff;
+    }
+
+    .custom-dropdown--white::after {
+        color: #4E82BB;
+    }
+
+    /* FF only temp fix */
+    @-moz-document url-prefix() {
+        .custom-dropdown__select              { padding-right: 2em }
+        .custom-dropdown--large .custom-dropdown__select { padding-right: 3em }
+        .custom-dropdown--small .custom-dropdown__select { padding-right: 1em }
+    }
+}
+
+#multishopselector_block_home form input{
+  float: none;
+}
+
+#multishopselector_block_home .separate-choose{
+  font-size: 20px;
+
+}
+
+#multishopselector_block_home input[type=submit]{
+  font-size: 1.2em;
+  margin-top: 10%;
+}
