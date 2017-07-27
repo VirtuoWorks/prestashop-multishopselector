@@ -101,19 +101,15 @@ class MultishopSelector extends Module
     $stateGetAway = $this->_stateShopGetAway();
     for($i = 0; $i < count($shopsInformations); $i++)
     {
-        // Récupération du transporteur lié au nom du magasin
-        $resultQuery1 = (Db::getInstance()->executeS('select id_carrier from ps_carrier where name =' . $shopsInformations[$i]['name'] . ' AND deleted = 0'));
-        // Récupération du tarif minimal de livraison du transporteur trouvé ci-dessus
-        if(count($resultQuery1))
-        {
-          $resultQuery2 = (Db::getInstance()->executeS('select delimiter1 from ps_range_price where id_carrier =' . $resultQuery1[0]['id_carrier']));
-          $minPrice =  intval($resultQuery2[0]['delimiter1']) . '€';
-        }
-        else
-        {
-          $minPrice = 'Pas de somme fixée';
-        }
-
+      // Take carrier identity for the shop
+      $resultQuery1 = (Db::getInstance()->executeS('select id_carrier from ps_carrier where name =' . $shopsInformations[$i]['name'] . ' AND deleted = 0'));
+      // Get minimal price for the carrier
+      $minPrice = 'No minimal price';
+      if(count($resultQuery1))
+      {
+        $resultQuery2 = (Db::getInstance()->executeS('select delimiter1 from ps_range_price where id_carrier =' . $resultQuery1[0]['id_carrier']));
+        $minPrice =  intval($resultQuery2[0]['delimiter1']) . '€';
+      }
       $shopsInformations[$i]['min_price'] = $minPrice;
     }
 
