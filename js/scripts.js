@@ -1,4 +1,4 @@
-(function($, window){
+((function($, window){
   $(document).ready(function(){
     //Add Class for background image
     $('body').addClass('homeShopSelector');
@@ -9,8 +9,6 @@
       $('#multishopselector_block_home form').submit(function(){
         if (selectChoose.length) {
           $(this).attr('action',$(this).find('select').val());
-        } else {
-          $(this).attr('action',link);
         }
       });
     //Place connexion block in the middle of the page
@@ -22,9 +20,7 @@
       }
     };
     blockSelectShopCenter();
-    $(window).resize(function(){
-      blockSelectShopCenter();
-    });
+    $(window).resize(function(){blockSelectShopCenter();});
     $('.slogan_langues .menu__button').html('Connexion');
   });
-})(jQuery, window);
+})(jQuery, window));

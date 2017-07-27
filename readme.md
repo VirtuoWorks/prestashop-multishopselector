@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a6f1281c2c1c4355bf331fa728dd5b19)](https://www.codacy.com/app/VirtuoWorks/prestashop-multishopselector?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=VirtuoWorks/prestashop-multishopselector&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a8056eb1db984613b65a391f3b7bb08b)](https://www.codacy.com/app/marcboussoulade/prestashop-multishopselector?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=VirtuoWorks/prestashop-multishopselector&amp;utm_campaign=Badge_Grade)
 
 # PrestaShop Multishop Selector
 

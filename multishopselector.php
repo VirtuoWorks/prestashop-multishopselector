@@ -24,7 +24,6 @@ class MultishopSelector extends Module
     if(!Configuration::get("PS_MULTISHOP_FEATURE_ACTIVE"))
     {
       $this->warning = $this->l("Your site has only one store. Multi-store feature must be enabled to use this module");
-      exit;
     }
 
   }

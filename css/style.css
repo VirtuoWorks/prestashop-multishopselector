@@ -3,7 +3,7 @@
 /**********************************************/
 
 body{
-   background-color: #fff !important;
+   background-color: #fff;
 }
 
 #wrapper{
@@ -162,8 +162,6 @@ body{
     color: #444;
 }
 
-
-
 @supports (pointer-events: none) and
       ((-webkit-appearance: none) or
       (-moz-appearance: none) or
@@ -225,7 +223,7 @@ body{
 
     /* FF only temp fix */
     @-moz-document url-prefix() {
-        .custom-dropdown__select              { padding-right: 2em }
+        .custom-dropdown__select { padding-right: 2em }
         .custom-dropdown--large .custom-dropdown__select { padding-right: 3em }
         .custom-dropdown--small .custom-dropdown__select { padding-right: 1em }
     }
