@@ -12,7 +12,7 @@
         }
       });
     //Place connexion block in the middle of the page
-    function  blockSelectShopCenter(){
+    var blockSelectShopCenter = function  (){
       var height = $('body').innerHeight();
       if ( height >= 600) {
         height = (height - ($('.homeShopSelector .logoHome').innerHeight() + $('#multishopselector_block_home').innerHeight())) * 0.1;
